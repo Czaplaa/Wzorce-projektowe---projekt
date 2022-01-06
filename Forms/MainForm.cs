@@ -24,6 +24,16 @@ namespace Projekt
             addSchool.ShowDialog();
         }
 
+        private void dodajKlasęToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fAddClass addClass = new fAddClass();
+            addClass.ShowDialog();
+        }
 
+        private void dodajUczniówToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fAddStudent addStudent = new fAddStudent();
+            addStudent.ShowDialog();
+        }
     }
 }

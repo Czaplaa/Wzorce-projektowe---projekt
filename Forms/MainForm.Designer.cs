@@ -156,12 +156,14 @@
             this.dodajKlasęToolStripMenuItem.Name = "dodajKlasęToolStripMenuItem";
             this.dodajKlasęToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
             this.dodajKlasęToolStripMenuItem.Text = "Dodaj klasę";
+            this.dodajKlasęToolStripMenuItem.Click += new System.EventHandler(this.dodajKlasęToolStripMenuItem_Click);
             // 
             // dodajUczniówToolStripMenuItem
             // 
             this.dodajUczniówToolStripMenuItem.Name = "dodajUczniówToolStripMenuItem";
-            this.dodajUczniówToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
-            this.dodajUczniówToolStripMenuItem.Text = "Dodaj uczniów";
+            this.dodajUczniówToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.dodajUczniówToolStripMenuItem.Text = "Dodaj ucznia";
+            this.dodajUczniówToolStripMenuItem.Click += new System.EventHandler(this.dodajUczniówToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -175,6 +177,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSchool)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).EndInit();

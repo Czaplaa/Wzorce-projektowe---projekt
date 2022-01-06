@@ -56,7 +56,7 @@
             this.tbSchoolName.Location = new System.Drawing.Point(6, 67);
             this.tbSchoolName.Name = "tbSchoolName";
             this.tbSchoolName.Size = new System.Drawing.Size(238, 30);
-            this.tbSchoolName.TabIndex = 2;
+            this.tbSchoolName.TabIndex = 0;
             // 
             // label1
             // 
@@ -82,10 +82,10 @@
             // 
             // tbSchoolAddress
             // 
-            this.tbSchoolAddress.Location = new System.Drawing.Point(6, 69);
+            this.tbSchoolAddress.Location = new System.Drawing.Point(6, 67);
             this.tbSchoolAddress.Name = "tbSchoolAddress";
             this.tbSchoolAddress.Size = new System.Drawing.Size(238, 30);
-            this.tbSchoolAddress.TabIndex = 2;
+            this.tbSchoolAddress.TabIndex = 1;
             // 
             // label2
             // 
@@ -107,7 +107,7 @@
             this.bAddSchool.UseVisualStyleBackColor = true;
             this.bAddSchool.Click += new System.EventHandler(this.bAddSchool_Click);
             // 
-            // FormAddSchool
+            // fAddSchool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,8 +115,9 @@
             this.Controls.Add(this.bAddSchool);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gbRequired);
-            this.Name = "FormAddSchool";
+            this.Name = "fAddSchool";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dodawanie szkoły";
             this.gbRequired.ResumeLayout(false);
             this.gbRequired.PerformLayout();

@@ -15,7 +15,12 @@ namespace Projekt.Forms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void fAddClass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bAddNextClass_Click(object sender, EventArgs e)
         {
 
         }
