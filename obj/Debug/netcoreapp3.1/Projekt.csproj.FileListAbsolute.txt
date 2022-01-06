@@ -5,7 +5,6 @@ C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\bin\Debug\netcor
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\bin\Debug\netcoreapp3.1\Projekt.dll
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\bin\Debug\netcoreapp3.1\Projekt.pdb
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.csproj.AssemblyReference.cache
-C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.Form1.resources
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.csproj.GenerateResource.cache
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.AssemblyInfoInputs.cache
@@ -14,3 +13,7 @@ C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcor
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.dll
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.pdb
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.genruntimeconfig.cache
+C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.MainForm.resources
+C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.Forms.fAddClass.resources
+C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.Forms.fAddSchool.resources
+C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.Forms.fAddStudent.resources
