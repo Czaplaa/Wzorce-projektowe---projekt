@@ -1,29 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Projekt.Interfaces;
 
 namespace Projekt.Classes
 {
-    internal class School : ISchool
+    internal class School 
     {
-        School(string name, string address) 
+        public School(string name, string address, string email, string phone, string fax)
         {
             this.name = name;
             this.address = address;
-        } 
-        public string name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string address { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public List<object> classes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public void AddClass()
-        {
-            throw new NotImplementedException();
+            this.email = email;
+            this.phone = phone;
+            this.fax = fax;
         }
-
-        public void RemoveClass()
-        {
-            throw new NotImplementedException();
-        }
+        public string name { get; set; }
+        public string address { get; set; }
+        public string email { get; set; }
+        public string phone { get; set; }
+        public string fax { get; set; }
+        public List<Class> classList { get; set; }
     }
 }

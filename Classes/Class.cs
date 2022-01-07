@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Projekt.Interfaces;
 
 namespace Projekt.Classes
 {
-    internal class Class : IClaas
+    internal class Class
     {
-        Class(string name)
+        public Class(string name, string type)
         {
             this.name = name;
+            this.type = type;
         }
-        public string name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public List<object> students { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string name { get; set; }
+        public string type { get; set; }
+        public List<Student> studentList { get; set; }
     }
 }

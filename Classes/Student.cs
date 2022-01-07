@@ -1,21 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Projekt.Interfaces;
 namespace Projekt.Classes
 {
-    internal class Student : IStudent
+    public class Student 
     {
-        Student(int Id, string FirstName, string LastName)
+        public Student(string firstName, string lastName, string PESEL, string email, string phone, string address)
         {
-            this.Id = Id;
-            this.FirstName = FirstName;
-            this.LastName = LastName;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.PESEL = PESEL;
+            this.email = email;
+            this.phone = phone;
+            this.address = address;
         }
-        public int Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string FirstName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LastName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public List<int> Grades { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public List<int> Presence { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string PESEL { get; set; }
+        public string email { get; set; }
+        public string phone { get; set; }
+        public string address { get; set; }
+        public List<int> grades { get; set; }
     }
 }
