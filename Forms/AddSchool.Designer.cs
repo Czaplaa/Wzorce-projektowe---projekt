@@ -182,7 +182,7 @@
             this.bAddNextSchool.TabIndex = 6;
             this.bAddNextSchool.Text = "Dodaj kolejną szkołę";
             this.bAddNextSchool.UseVisualStyleBackColor = true;
-            this.bAddNextSchool.Click += new System.EventHandler(this.bAddSchool_Click);
+            this.bAddNextSchool.Click += new System.EventHandler(this.bAddNextSchool_Click);
             // 
             // fAddSchool
             // 
@@ -193,6 +193,7 @@
             this.Controls.Add(this.bAddSchool);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gbRequired);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fAddSchool";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

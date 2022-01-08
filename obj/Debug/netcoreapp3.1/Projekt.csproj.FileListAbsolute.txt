@@ -17,3 +17,5 @@ C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcor
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.Forms.fAddClass.resources
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.Forms.fAddSchool.resources
 C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.Forms.fAddStudent.resources
+C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\micha\source\repos\Czaplaa\Wzorce-projektowe---projekt\obj\Debug\netcoreapp3.1\Projekt.csproj.CopyComplete

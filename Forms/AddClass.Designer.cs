@@ -139,6 +139,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bAddNextClass);
             this.Controls.Add(this.bAddClass);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fAddClass";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
