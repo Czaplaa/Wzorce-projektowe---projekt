@@ -31,16 +31,16 @@
             this.gbRequired = new System.Windows.Forms.GroupBox();
             this.tbSchoolName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbSchoolAddress = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbSchoolPhoneNo = new System.Windows.Forms.TextBox();
+            this.tbSchoolFax = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.tbSchoolEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bAddSchool = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbSchoolPhoneNo = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbSchoolFax = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbSchoolAddress = new System.Windows.Forms.TextBox();
             this.bAddNextSchool = new System.Windows.Forms.Button();
             this.gbRequired.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -77,83 +77,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nazwa szkoły";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tbSchoolPhoneNo);
-            this.groupBox2.Controls.Add(this.tbSchoolFax);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.tbSchoolEmail);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(268, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(250, 246);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Opcjonalne";
-            // 
-            // tbSchoolEmail
-            // 
-            this.tbSchoolEmail.Location = new System.Drawing.Point(6, 67);
-            this.tbSchoolEmail.Name = "tbSchoolEmail";
-            this.tbSchoolEmail.Size = new System.Drawing.Size(238, 30);
-            this.tbSchoolEmail.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(6, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Email";
-            // 
-            // bAddSchool
-            // 
-            this.bAddSchool.Location = new System.Drawing.Point(388, 295);
-            this.bAddSchool.Name = "bAddSchool";
-            this.bAddSchool.Size = new System.Drawing.Size(124, 29);
-            this.bAddSchool.TabIndex = 2;
-            this.bAddSchool.Text = "Dodaj szkołę";
-            this.bAddSchool.UseVisualStyleBackColor = true;
-            this.bAddSchool.Click += new System.EventHandler(this.bAddSchool_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(6, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Telefon";
-            // 
-            // tbSchoolPhoneNo
-            // 
-            this.tbSchoolPhoneNo.Location = new System.Drawing.Point(6, 137);
-            this.tbSchoolPhoneNo.Name = "tbSchoolPhoneNo";
-            this.tbSchoolPhoneNo.Size = new System.Drawing.Size(238, 30);
-            this.tbSchoolPhoneNo.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(6, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Fax";
-            // 
-            // tbSchoolFax
-            // 
-            this.tbSchoolFax.Location = new System.Drawing.Point(6, 208);
-            this.tbSchoolFax.Name = "tbSchoolFax";
-            this.tbSchoolFax.Size = new System.Drawing.Size(238, 30);
-            this.tbSchoolFax.TabIndex = 1;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -174,12 +97,89 @@
             this.tbSchoolAddress.Size = new System.Drawing.Size(238, 30);
             this.tbSchoolAddress.TabIndex = 1;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tbSchoolPhoneNo);
+            this.groupBox2.Controls.Add(this.tbSchoolFax);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.tbSchoolEmail);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.Location = new System.Drawing.Point(268, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(250, 246);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Opcjonalne";
+            // 
+            // tbSchoolPhoneNo
+            // 
+            this.tbSchoolPhoneNo.Location = new System.Drawing.Point(6, 137);
+            this.tbSchoolPhoneNo.Name = "tbSchoolPhoneNo";
+            this.tbSchoolPhoneNo.Size = new System.Drawing.Size(238, 30);
+            this.tbSchoolPhoneNo.TabIndex = 1;
+            // 
+            // tbSchoolFax
+            // 
+            this.tbSchoolFax.Location = new System.Drawing.Point(6, 208);
+            this.tbSchoolFax.Name = "tbSchoolFax";
+            this.tbSchoolFax.Size = new System.Drawing.Size(238, 30);
+            this.tbSchoolFax.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(6, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Telefon";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(6, 185);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Fax";
+            // 
+            // tbSchoolEmail
+            // 
+            this.tbSchoolEmail.Location = new System.Drawing.Point(6, 67);
+            this.tbSchoolEmail.Name = "tbSchoolEmail";
+            this.tbSchoolEmail.Size = new System.Drawing.Size(238, 30);
+            this.tbSchoolEmail.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(6, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Email";
+            // 
+            // bAddSchool
+            // 
+            this.bAddSchool.Location = new System.Drawing.Point(388, 295);
+            this.bAddSchool.Name = "bAddSchool";
+            this.bAddSchool.Size = new System.Drawing.Size(124, 29);
+            this.bAddSchool.TabIndex = 5;
+            this.bAddSchool.Text = "Dodaj szkołę";
+            this.bAddSchool.UseVisualStyleBackColor = true;
+            this.bAddSchool.Click += new System.EventHandler(this.bAddSchool_Click);
+            // 
             // bAddNextSchool
             // 
             this.bAddNextSchool.Location = new System.Drawing.Point(209, 295);
             this.bAddNextSchool.Name = "bAddNextSchool";
             this.bAddNextSchool.Size = new System.Drawing.Size(173, 29);
-            this.bAddNextSchool.TabIndex = 2;
+            this.bAddNextSchool.TabIndex = 6;
             this.bAddNextSchool.Text = "Dodaj kolejną szkołę";
             this.bAddNextSchool.UseVisualStyleBackColor = true;
             this.bAddNextSchool.Click += new System.EventHandler(this.bAddSchool_Click);

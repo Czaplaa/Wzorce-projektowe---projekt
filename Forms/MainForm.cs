@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Projekt.Forms;
+using Projekt.Lists;
+using Projekt.Classes;
 
 namespace Projekt
 {
@@ -34,6 +36,11 @@ namespace Projekt
         {
             fAddStudent addStudent = new fAddStudent();
             addStudent.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+             
         }
     }
 }

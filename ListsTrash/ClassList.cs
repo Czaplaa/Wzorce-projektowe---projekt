@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Projekt.Classes;
 
 namespace Projekt.Lists
 {
-    internal class SchoolList
+    internal class ClassList
     {
-        public List<School> schoolList { get; set; }
     }
 }

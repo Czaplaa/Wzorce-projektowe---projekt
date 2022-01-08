@@ -31,9 +31,9 @@
             this.bAddClass = new System.Windows.Forms.Button();
             this.bAddNextClass = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbSchoolAddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbSchoolAddress = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@
             this.bAddClass.Location = new System.Drawing.Point(401, 141);
             this.bAddClass.Name = "bAddClass";
             this.bAddClass.Size = new System.Drawing.Size(112, 29);
-            this.bAddClass.TabIndex = 1;
+            this.bAddClass.TabIndex = 2;
             this.bAddClass.Text = "Dodaj klasę";
             this.bAddClass.UseVisualStyleBackColor = true;
             this.bAddClass.Click += new System.EventHandler(this.fAddClass_Click);
@@ -56,7 +56,7 @@
             this.bAddNextClass.Location = new System.Drawing.Point(231, 141);
             this.bAddNextClass.Name = "bAddNextClass";
             this.bAddNextClass.Size = new System.Drawing.Size(164, 29);
-            this.bAddNextClass.TabIndex = 2;
+            this.bAddNextClass.TabIndex = 3;
             this.bAddNextClass.Text = "Dodaj kolejną klasę";
             this.bAddNextClass.UseVisualStyleBackColor = true;
             this.bAddNextClass.Click += new System.EventHandler(this.bAddNextClass_Click);
@@ -69,19 +69,9 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(251, 103);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wymagane";
-            // 
-            // tbSchoolAddress
-            // 
-            this.tbSchoolAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSchoolAddress.Location = new System.Drawing.Point(-795, -149);
-            this.tbSchoolAddress.Name = "tbSchoolAddress";
-            this.tbSchoolAddress.Size = new System.Drawing.Size(280, 27);
-            this.tbSchoolAddress.TabIndex = 3;
             // 
             // label6
             // 
@@ -98,7 +88,17 @@
             this.textBox1.Location = new System.Drawing.Point(6, 63);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(238, 30);
-            this.textBox1.TabIndex = 3;
+            this.textBox1.TabIndex = 0;
+            // 
+            // tbSchoolAddress
+            // 
+            this.tbSchoolAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbSchoolAddress.Location = new System.Drawing.Point(-795, -149);
+            this.tbSchoolAddress.Name = "tbSchoolAddress";
+            this.tbSchoolAddress.Size = new System.Drawing.Size(280, 27);
+            this.tbSchoolAddress.TabIndex = 3;
             // 
             // groupBox2
             // 
@@ -127,7 +127,7 @@
             this.textBox2.Location = new System.Drawing.Point(6, 63);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(238, 30);
-            this.textBox2.TabIndex = 3;
+            this.textBox2.TabIndex = 1;
             // 
             // fAddClass
             // 
