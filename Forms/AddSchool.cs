@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Text;
-using System.Windows.Forms;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Projekt.Builders;
 using Projekt.Classes;
-using Projekt.Lists;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Projekt.Forms
 {
@@ -22,6 +18,23 @@ namespace Projekt.Forms
 
 
         private void bAddSchool_Click(object sender, EventArgs e)
+        {
+            Task addSchoolAsync = Task.Run(() => addSchool(sender, e));     //równoległe dodawanie dodawanie obiektu do jsona
+            Close();
+        }
+
+
+        private void bAddNextSchool_Click(object sender, EventArgs e)
+        {
+            Task addSchoolAsync = Task.Run(() => addSchool(sender, e));     //równoległe dodawanie dodawanie obiektu do jsona
+            tbSchoolAddress.Text = "";
+            tbSchoolEmail.Text = "";
+            tbSchoolFax.Text = "";
+            tbSchoolName.Text = "";
+            tbSchoolPhoneNo.Text = "";
+        }
+
+        private void addSchool(object sender, EventArgs e)
         {
             if (DataValidation())
             {
@@ -48,10 +61,10 @@ namespace Projekt.Forms
 
                     SaveJsonToFile(schoolList);
                 }
-                catch (Exception)       
+                catch (Exception)
                 {
-                    List<School> schoolList = new List <School>();    
-                    schoolList.Add (schoolObj);
+                    List<School> schoolList = new List<School>();
+                    schoolList.Add(schoolObj);
 
                     SaveJsonToFile(schoolList);
                 }
@@ -65,18 +78,13 @@ namespace Projekt.Forms
                         sw.WriteLine(stringToSave);
                         sw.Close();
                     }
-                }
+                }                
             }
-        }
-
-        private void bAddNextSchool_Click(object sender, EventArgs e)
-        {
-
         }
 
         private bool DataValidation()
         {
-            if(tbSchoolName.Text.Trim() == "" && tbSchoolAddress.Text.Trim() == "")
+            if(tbSchoolName.Text.Trim() == string.Empty && tbSchoolAddress.Text.Trim() == string.Empty)
             {
                 return false;
             }

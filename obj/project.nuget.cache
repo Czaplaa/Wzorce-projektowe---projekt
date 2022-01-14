@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qPrxN/PdF3agMoo1VD8sO5gf1cGJlThX2e6YxIaoxKnJJSJ2hNC0efwYh+r7jz51l+Zk9c36dKgINJnD8l46Uw==",
+  "dgSpecHash": "+d5lkiZlJ+PLEMI1gvH+7Xxs4tu9vEtFtZ86RQOpmSQgahe+DX/Lhi8fYVHwY5FLFIRMDNvmzhTEF2N2U6we5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\micha\\source\\repos\\Czaplaa\\Wzorce-projektowe---projekt\\Projekt.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\micha\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\micha\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+    "C:\\Users\\micha\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

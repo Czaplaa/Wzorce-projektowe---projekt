@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvSchool = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvClass = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvStudent = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -39,6 +37,7 @@
             this.dodajSzkołęToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajKlasęToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajUczniówToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSchool)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).BeginInit();
@@ -49,71 +48,53 @@
             // 
             this.dgvSchool.AllowUserToAddRows = false;
             this.dgvSchool.AllowUserToDeleteRows = false;
-            this.dgvSchool.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvSchool.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSchool.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSchool.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSchool.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
-            this.dgvSchool.Location = new System.Drawing.Point(34, 55);
+            this.dgvSchool.Location = new System.Drawing.Point(34, 77);
+            this.dgvSchool.MultiSelect = false;
             this.dgvSchool.Name = "dgvSchool";
             this.dgvSchool.ReadOnly = true;
+            this.dgvSchool.RowHeadersVisible = false;
             this.dgvSchool.RowHeadersWidth = 51;
             this.dgvSchool.RowTemplate.Height = 29;
-            this.dgvSchool.Size = new System.Drawing.Size(250, 188);
+            this.dgvSchool.ShowEditingIcon = false;
+            this.dgvSchool.Size = new System.Drawing.Size(900, 188);
             this.dgvSchool.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Szkoły";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // dgvClass
             // 
             this.dgvClass.AllowUserToAddRows = false;
             this.dgvClass.AllowUserToDeleteRows = false;
-            this.dgvClass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvClass.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvClass.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2});
-            this.dgvClass.Location = new System.Drawing.Point(290, 55);
+            this.dgvClass.Location = new System.Drawing.Point(34, 294);
             this.dgvClass.Name = "dgvClass";
             this.dgvClass.ReadOnly = true;
             this.dgvClass.RowHeadersWidth = 51;
             this.dgvClass.RowTemplate.Height = 29;
-            this.dgvClass.Size = new System.Drawing.Size(250, 188);
+            this.dgvClass.Size = new System.Drawing.Size(900, 188);
             this.dgvClass.TabIndex = 1;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Klasy";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // dgvStudent
             // 
             this.dgvStudent.AllowUserToAddRows = false;
             this.dgvStudent.AllowUserToDeleteRows = false;
-            this.dgvStudent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvStudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvStudent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column3});
-            this.dgvStudent.Location = new System.Drawing.Point(546, 55);
+            this.dgvStudent.Location = new System.Drawing.Point(298, 515);
             this.dgvStudent.Name = "dgvStudent";
             this.dgvStudent.ReadOnly = true;
             this.dgvStudent.RowHeadersWidth = 51;
             this.dgvStudent.RowTemplate.Height = 29;
-            this.dgvStudent.Size = new System.Drawing.Size(250, 188);
+            this.dgvStudent.Size = new System.Drawing.Size(260, 188);
             this.dgvStudent.TabIndex = 2;
             // 
             // Column3
@@ -140,7 +121,7 @@
             this.dodajUczniówToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1063, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1073, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -165,11 +146,22 @@
             this.dodajUczniówToolStripMenuItem.Text = "Dodaj ucznia";
             this.dodajUczniówToolStripMenuItem.Click += new System.EventHandler(this.dodajUczniówToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(34, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 23);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Szkoły";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 635);
+            this.ClientSize = new System.Drawing.Size(1073, 635);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvClass);
             this.Controls.Add(this.dgvSchool);
             this.Controls.Add(this.splitter1);
@@ -197,11 +189,10 @@
         private System.Windows.Forms.DataGridView dgvStudent;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dodajSzkołęToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dodajKlasęToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dodajUczniówToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ToolStripMenuItem dodajSzkołęToolStripMenuItem;
     }
 }

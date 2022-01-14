@@ -32,15 +32,15 @@
             this.lFirstName = new System.Windows.Forms.Label();
             this.lLastName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbPESEL = new System.Windows.Forms.TextBox();
             this.tbLastName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbFirstName = new System.Windows.Forms.TextBox();
             this.bAddNextStudent = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbResidentialAddress = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbPhoneNo = new System.Windows.Forms.TextBox();
             this.lResidentialAddress = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.bAddStudent.TabIndex = 4;
             this.bAddStudent.Text = "Dodaj ucznia";
             this.bAddStudent.UseVisualStyleBackColor = true;
-            this.bAddStudent.Click += new System.EventHandler(this.button1_Click);
+            this.bAddStudent.Click += new System.EventHandler(this.bAddStudent_Click);
             // 
             // lFirstName
             // 
@@ -80,7 +80,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbPESEL);
             this.groupBox1.Controls.Add(this.tbLastName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tbFirstName);
@@ -94,12 +94,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wymagane";
             // 
-            // textBox1
+            // tbPESEL
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(238, 30);
-            this.textBox1.TabIndex = 3;
+            this.tbPESEL.Location = new System.Drawing.Point(6, 206);
+            this.tbPESEL.Name = "tbPESEL";
+            this.tbPESEL.Size = new System.Drawing.Size(238, 30);
+            this.tbPESEL.TabIndex = 3;
             // 
             // tbLastName
             // 
@@ -133,13 +133,13 @@
             this.bAddNextStudent.TabIndex = 5;
             this.bAddNextStudent.Text = "Dodaj kolejnego ucznia";
             this.bAddNextStudent.UseVisualStyleBackColor = true;
-            this.bAddNextStudent.Click += new System.EventHandler(this.button1_Click);
+            this.bAddNextStudent.Click += new System.EventHandler(this.bAddNextStudent_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.tbEmail);
             this.groupBox2.Controls.Add(this.tbResidentialAddress);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.tbPhoneNo);
             this.groupBox2.Controls.Add(this.lResidentialAddress);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
@@ -150,14 +150,13 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opcjonalne";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // textBox4
+            // tbEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(6, 206);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(238, 30);
-            this.textBox4.TabIndex = 2;
+            this.tbEmail.Location = new System.Drawing.Point(6, 206);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(238, 30);
+            this.tbEmail.TabIndex = 2;
             // 
             // tbResidentialAddress
             // 
@@ -166,12 +165,12 @@
             this.tbResidentialAddress.Size = new System.Drawing.Size(238, 30);
             this.tbResidentialAddress.TabIndex = 0;
             // 
-            // textBox3
+            // tbPhoneNo
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(238, 30);
-            this.textBox3.TabIndex = 1;
+            this.tbPhoneNo.Location = new System.Drawing.Point(6, 130);
+            this.tbPhoneNo.Name = "tbPhoneNo";
+            this.tbPhoneNo.Size = new System.Drawing.Size(238, 30);
+            this.tbPhoneNo.TabIndex = 1;
             // 
             // lResidentialAddress
             // 
@@ -237,10 +236,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox tbResidentialAddress;
         private System.Windows.Forms.Label lResidentialAddress;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbPESEL;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbPhoneNo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
     }
