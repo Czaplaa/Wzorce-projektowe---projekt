@@ -45,8 +45,8 @@ namespace Projekt.Forms
 
             try
             {
-                using (StreamReader sr = new StreamReader(@"C:\Users\micha\Desktop\Projekt.json"))
-                {
+                using (StreamReader sr = new StreamReader(@"C:\Users\micha\Desktop\Projekt.json")) //deserializacja jsona dodanie klasy 
+                {                                                                                  //i ponowna serializacja
                     stringFromFile = sr.ReadToEnd();
                 }
 
@@ -63,7 +63,7 @@ namespace Projekt.Forms
             }
             catch (Exception)
             {
-                Console.WriteLine("xD");
+                
             }
         }
     }

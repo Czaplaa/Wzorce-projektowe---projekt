@@ -57,7 +57,7 @@ namespace Projekt.Forms
                     stringFromFile = sr.ReadToEnd();                                                        
                 }
 
-                List<School> schoolList = JsonConvert.DeserializeObject<List<School>>(stringFromFile);      //deserializacja jsona
+                List<School> schoolList = JsonConvert.DeserializeObject<List<School>>(stringFromFile);      
                 schoolList[0].classList[0].studentList.Add(studentObj);                                     //niedokończony wybór szkoły, klasy
                 schoolList[0].classList[0].studentList.OrderBy(x => x.lastName);                            //sortowanie po nazwisku
                 

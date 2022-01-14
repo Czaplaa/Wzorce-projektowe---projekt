@@ -51,7 +51,7 @@ namespace Projekt.Forms
 
                 try
                 {
-                    using (StreamReader sr = new StreamReader(@"C:\Users\micha\Desktop\Projekt.json"))
+                    using (StreamReader sr = new StreamReader(@"C:\Users\micha\Desktop\Projekt.json")) //odczyt listy szkół z pliku json
                     {
                         stringFromFile = sr.ReadToEnd();
                     }
@@ -61,7 +61,7 @@ namespace Projekt.Forms
 
                     SaveJsonToFile(schoolList);
                 }
-                catch (Exception)
+                catch (Exception)                                                               //tworzenie listy jeśli plik json nie istniał
                 {
                     List<School> schoolList = new List<School>();
                     schoolList.Add(schoolObj);
@@ -73,7 +73,7 @@ namespace Projekt.Forms
                 {
                     stringToSave = JsonConvert.SerializeObject(schoolList);
 
-                    using (StreamWriter sw = new StreamWriter(@"C:\Users\micha\Desktop\Projekt.json"))
+                    using (StreamWriter sw = new StreamWriter(@"C:\Users\micha\Desktop\Projekt.json")) //zapis listy do json z dodaną szkołą
                     {
                         sw.WriteLine(stringToSave);
                         sw.Close();
